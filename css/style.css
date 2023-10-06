@@ -1,0 +1,768 @@
+/* Propiedad Inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "servicios servicios servicios servicios"
+        "USP USP USP USP"
+        "contacto contacto contacto contacto"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.header img {
+    height: 3rem;
+    width: 10rem;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+
+.nav-link {
+    padding-right: 2rem;
+}
+
+#navbar {
+    background-color: #ffff !important;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-expand-lg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+    margin-right: 1.2rem;
+}
+
+/* ------------------------Hero---------------------------------------- */
+/* Hero Padre */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-area: hero;
+    /* background-image: url(../img/Hero.jpg); */
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffff;
+}
+
+/* Div Hero contenedor del carrusel */
+.div-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(100, 100, 123, 0.259);
+}
+
+/* Carrusel */
+.carousel-item {
+
+    grid-template-columns: 1fr;
+    height: 40rem;
+    width: 100vw;
+    position: relative;
+}
+
+.titulo-hero1 {
+    position: absolute;
+    top: 25%;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+.titulo-hero1 h1 {
+    margin-left: 3rem;
+
+}
+
+.titulo-hero1 button {
+
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    margin-left: 3rem;
+    border-radius: 0.2rem;
+
+}
+
+.titulo-hero1 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.titulo-hero2 {
+    position: absolute;
+    top: 25%;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+.titulo-hero2 h1 {
+    margin-left: 3rem;
+
+}
+
+.titulo-hero2 button {
+
+    margin-top: 2rem;
+    width: 12rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: #00bb2d;
+    font-weight: 600;
+    margin-left: 3rem;
+    border-radius: 0.2rem;
+
+}
+
+.titulo-hero2 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.titulo-hero3 {
+    position: absolute;
+    top: 25%;
+    color: #ffffff;
+    text-align: left;
+
+}
+
+.titulo-hero3 h1 {
+    margin-left: 3rem;
+
+}
+
+.titulo-hero3 button {
+
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    margin-left: 3rem;
+    border-radius: 0.2rem;
+
+}
+
+.titulo-hero3 a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+.botones-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}
+
+#carouselExampleIndicators img {
+    height: 40rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Servicios padre */
+.servicios {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+.servicios img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.servicios a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.servicios-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-a button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+.servicios-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-b button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+.servicios-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-c button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+
+
+/* USP Padre */
+.USP {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-area: USP;
+    text-align: center;
+    background-color: #ffff;
+    height: auto;
+}
+
+.USP hr {
+    width: 5rem;
+    color: red;
+    align-self: flex-start;
+}
+
+.USP-a {
+    display: flex;
+    flex-direction: column;
+    background-color: #898989;
+    text-align: left;
+    padding: 3em;
+    align-items: center;
+}
+
+
+.USP-b {
+    display: flex;
+    flex-direction: column;
+    background-color: #CCCACA;
+    padding: 3em;
+    text-align: left;
+    align-items: center;
+}
+
+
+.USP-c {
+    display: flex;
+    flex-direction: column;
+    background-color: #898989;
+    padding: 3em;
+    text-align: left;
+    align-items: center;
+
+}
+
+.USP-d {
+    display: flex;
+    flex-direction: column;
+    background-color: #CCCACA;
+    padding: 3em;
+    text-align: left;
+    align-items: center;
+
+}
+
+/* contacto padre */
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../img/Imagen\ contacto.png);
+    background-attachment: fixed;
+    background-position: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.datos-contacto {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-rows: 1fr;
+    width: 45rem;
+    height: 65%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+}
+
+.datos-contacto button {
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    background-color: unset;
+}
+
+.horarios {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 45rem;
+    background-color: #3c465cb5;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.horarios ul {
+    list-style: none;
+    text-align: left;
+}
+
+.horarios button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: #00bb2d;
+    font-weight: 700;
+    border-radius: 0.2rem;
+}
+
+.horarios a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-area: footer;
+    text-align: center;
+    list-style: none;
+    list-style-type: none;
+    background-color: #3C465C;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-a {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.footer-a ul {
+    list-style-type: none;
+    text-align: center;
+    justify-content: flex-start;
+    margin-left: -2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-a a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 8rem;
+}
+
+.footer-c {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 0, 0, 0;
+    margin-top: 2rem;
+
+}
+
+.footer-c ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-c a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    justify-content: flex-start;
+    margin-left: -2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.grilla-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "formulario formulario formulario formulario"
+        "contacto contacto contacto contacto"
+        "footer footer footer footer";
+
+}
+
+.contacto-formulario {
+    grid-area: formulario;
+    width: 100%;
+    height: 71rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/Imagen\ contacto.png);
+    background-attachment: fixed;
+    background-position: no-repeat;
+    background-size: cover;
+
+}
+
+/* Titulo Formularioa */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulario */
+.formulario {
+    background-color: rgba(100, 148, 237, 0.416);
+    border-radius: 1rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.mapa iframe {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    align-self: center;
+}
+
+.contacto-horario {
+    grid-area: contacto;
+
+}
+
+.horariosC {
+
+    background-color: #3c465cb5;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.horariosC ul {
+    list-style: none;
+    text-align: left;
+}
+
+.horariosC button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: #00bb2d;
+    font-weight: 700;
+    border-radius: 0.2rem;
+}
+
+.horariosC a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.vp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+
+
+.imagenvp img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.infovp {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.infovp button{
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+.infovp p {
+    text-align: justify;
+}
+
+.infovp a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.vt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.imagenvt img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.infovt {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.infovt p {
+    text-align: justify;
+}
+
+.infovt button{
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+.infovt a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.ve {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.infove {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.infove button{
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+.imagenve img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.infove a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.tipos-servicio {
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    text-align: center;
+    background-color: #ffff;
+    height: auto;
+    align-items: center;
+}
+
+.tipos-a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tipos-a p {
+    text-align: justify;
+}
+
+.tipos-b {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tipos-b p {
+    text-align: justify;
+}
+
+.tipos-c {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tipos-c p {
+    text-align: justify;
+}
+
+.AvisoPrivacidad{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.AvisoPrivacidad p{
+text-align: justify;
+}
