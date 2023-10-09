@@ -410,12 +410,22 @@
     text-align: left;
 }
 
-.horarios button {
+.botonwa-horarios {
     width: 15rem;
     height: 3rem;
     border-style: none;
     color: #ffffff;
     background-color: #00bb2d;
+    font-weight: 700;
+    border-radius: 0.2rem;
+}
+
+.boton-direccion{
+    width: 30rem;
+    height: 3rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: red;
     font-weight: 700;
     border-radius: 0.2rem;
 }
