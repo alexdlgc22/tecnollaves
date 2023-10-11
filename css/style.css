@@ -103,11 +103,11 @@
     margin-left: 3rem;
 
 }
-
+/* Agregar icono de telefono */
 .titulo-hero1 button {
 
     margin-top: 2rem;
-    width: 10rem;
+    width: 15rem;
     height: 3rem;
     border-style: none;
     color: #ffffff;
@@ -136,12 +136,12 @@
     margin-left: 3rem;
 
 }
-
+/* Visualizacion responsive */
 .titulo-hero2 button {
 
     margin-top: 2rem;
-    width: 12rem;
-    height: 3rem;
+    width: 27rem;
+    height: 4rem;
     border-style: none;
     color: #ffffff;
     background-color: #00bb2d;
@@ -173,7 +173,7 @@
 .titulo-hero3 button {
 
     margin-top: 2rem;
-    width: 10rem;
+    width: 12rem;
     height: 3rem;
     border-style: none;
     color: #ffffff;
@@ -638,7 +638,7 @@
 
 .infovp button{
     width: 15rem;
-    height: 3rem;
+    height: 5rem;
     border-style: none;
     color: #ffffff;
     background-color: red;
