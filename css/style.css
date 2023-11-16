@@ -39,14 +39,15 @@
 
 }
 
-.navbar-brand img{
-    height: 7.5rem;
-    width: 9rem;
+.navbar-brand img {
+    height: 45px;
+    width: 100px;
 }
 
 .nav-link {
     padding-right: 2rem;
-    color: #ffff !important;
+    color: #111111 !important;
+    text-align: center;
 }
 
 .container-fluid {
@@ -67,7 +68,7 @@
 .navbar-collapse {
     display: flex;
     justify-content: flex-end;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .navbar-expand-lg {
@@ -76,8 +77,8 @@
 }
 
 #navbar {
-    background-color: #010F16 !important;
-    color: #ffff !important;
+    background-color: #ffffff !important;
+    color: #070707 !important;
 }
 
 #navbarNav {
@@ -92,10 +93,6 @@
     align-items: center;
     align-content: center;
     grid-area: hero;
-
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
     text-align: center;
     color: #ffff;
 }
@@ -109,48 +106,39 @@
     width: 100vw;
 }
 
+
+
 /* Carrusel */
 .carousel-item {
 
     grid-template-columns: 1fr;
-    height: 40rem;
+    height: 45rem;
     width: 100vw;
     position: relative;
 }
 
+
 .titulo-hero1 {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    
     position: absolute;
-    top:25rem;
+    top: 30rem;
     color: #ffffff;
-    text-align: left;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-family: sans-serif;
     justify-content: center;
-    width: 95vw;
-    height: 50%;
-
+    width: 100vw;
+    margin-right: 6rem;
 }
 
-.titulo-hero1 h2 {
-    margin-left: 3rem;
-    text-align: center;
-
-}
 
 /* Agregar icono de telefono */
 .titulo-hero1 button {
-    margin-top: 2rem;
-    width: 30rem;
-    max-width: 35rem;
+    margin-top: 9rem;
+    width: 25rem;
     height: 3rem;
     border-style: none;
     color: #ffffff;
     background-color: red;
     border-radius: 0.2rem;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 
 }
 
@@ -165,21 +153,24 @@
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
     position: absolute;
-    top: 25%;
+    top: 15%;
     color: #ffffff;
-    text-align: left;
-    width: 90%;
+    text-align: center;
+    width: 100%;
     background-color: #032d4283;
     border-radius: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1.5rem;
     font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    
+    
 
 }
 
 .titulo-hero2 h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+
     font-family: sans-serif;
     margin-top: 1rem;
 }
@@ -188,17 +179,19 @@
 .titulo-hero2 button {
 
     margin-top: 2rem;
-    width: 85%;
-    max-width: 30rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    max-width: 40rem;
     height: 4rem;
     border-style: none;
     color: #ffffff;
     background-color: #00bb2d;
-    font-weight: 600;
-    margin-left: 1rem;
+    font-weight: 200;
     border-radius: 0.2rem;
-    margin-bottom: 2rem;
-    font-family: sans-serif
+    font-family: sans-serif;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+
+
 }
 
 
@@ -209,65 +202,74 @@
 }
 
 .titulo-hero3 {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 25%;
+    top: 1%;
     color: #ffffff;
     text-align: left;
-
     border-radius: 0.5rem;
-    margin-left: 2.3rem;
+
 
 
 
 }
 
-.titulo-hero3 h1 {
-    margin-left: 3rem;
+
+.botones-hero3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-content: center;
+    width: 100vw;
+    margin-bottom: 3rem;
+    justify-items: center;
 
 }
 
 .boton1-hero3 button {
-    width: 85%;
+    width: 20rem;
     max-width: 30rem;
     height: 4rem;
     border-style: none;
     color: #ffffff;
     background-color: #066899;
     font-weight: 600;
-    margin-left: 2rem;
+    margin: 2rem;
     border-radius: 0.2rem;
-    margin-bottom: 2rem;
-    font-family: sans-serif
+    font-family: sans-serif;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 }
 
 .boton2-hero3 button {
-    width: 85%;
+    width: 20rem;
     max-width: 30rem;
     height: 4rem;
     border-style: none;
     color: #ffffff;
-    background-color: #055983;
+    background-color: #066899;
     font-weight: 600;
-    margin-left: 2rem;
+    margin: 2rem;
     border-radius: 0.2rem;
-    font-family: sans-serif
+    font-family: sans-serif;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 }
 
 .boton3-hero3 button {
-    margin-top: 2rem;
-    width: 85%;
+
+    width: 20rem;
     max-width: 30rem;
     height: 4rem;
     border-style: none;
     color: #ffffff;
-    background-color: #044A6D;
+    background-color: #066899;
     font-weight: 600;
-    margin-left: 2rem;
     border-radius: 0.2rem;
-    font-family: sans-serif
+    font-family: sans-serif;
+    margin: 2rem;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 }
 
 .titulo-hero3 a {
@@ -287,22 +289,24 @@
 
 
 #carouselExampleIndicators img {
-    height: 50rem;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     width: 100%;
+    background-position: center center fixed;
+    background-repeat: no-repeat;
 
 }
 
 .carousel-control-prev {
-    height: 77%;
+    height: 46rem;
     margin-top: 3.7rem;
     width: 5% !important;
 }
 
 .carousel-control-next {
-    height: 77%;
-    margin-top: 3.7rem;
+    height: 46rem;
+    margin-top: 3.9rem;
     width: 5% !important;
 }
 
@@ -353,10 +357,13 @@
     font-weight: 600;
     border-radius: 0.3rem;
     align-items: center;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+    transition: ease;
+    transition-duration: 0.5s;
 }
 
 .servicios-a img {
-    width: 6.1rem;
+    width: 6rem;
     height: 4.7rem;
     margin: 0.5rem;
 }
@@ -385,10 +392,11 @@
     font-weight: 600;
     border-radius: 0.3rem;
     align-items: center;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 }
 
 .servicios-b img {
-    width: 7rem;
+    width: 6rem;
     height: 4.5rem;
     margin: 0.5rem;
 }
@@ -416,6 +424,7 @@
     font-weight: 600;
     border-radius: 0.3rem;
     align-items: center;
+    box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
 }
 
 .servicios-c img {
@@ -447,12 +456,12 @@
     margin-bottom: 1rem;
 }
 
-.titulo-btn-servicio h5{
+.titulo-btn-servicio h5 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.card.card-body{
+.card.card-body {
     margin-left: 1rem;
     width: 100%;
     height: 700px;
@@ -461,33 +470,33 @@
 
 }
 
-.collapse{
+.collapse {
     width: 100%;
-    
+
 }
 
-.collapse img{
+.collapse img {
     align-self: center;
     width: 8rem;
     height: 8rem;
     border-radius: 0.5rem;
 }
 
-.img-vp{
+.img-vp {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.img-vt{
+.img-vt {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.img-vr{
+.img-vr {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -497,7 +506,7 @@
 /* USP Padre */
 .USP {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 1rem;
     row-gap: 1rem;
     grid-area: USP;
@@ -578,16 +587,17 @@
 
 }
 
-.imagenes-formadepago{
+.imagenes-formadepago {
     display: flex;
     flex-direction: row;
 
-    
+
 }
 
-.imagenes-formadepago img{
-    height: 4rem;
-    width: 4rem;
+.imagenes-formadepago img {
+    height: 55%;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 /* contacto padre */
@@ -600,7 +610,9 @@
     background-attachment: fixed;
     background-position: no-repeat;
     background-size: cover;
-    height: 30rem;
+    object-fit: cover;
+    object-position: center center;
+    height: 35rem;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -608,7 +620,7 @@
 
 }
 
-.btn-primary{
+.btn-primary {
     margin-top: 2rem;
     width: 85%;
     max-width: 30rem;
@@ -661,23 +673,23 @@
     background-color: unset;
 }
 
-.datos-contacto ul{
+.datos-contacto ul {
     list-style: none;
     text-align: start;
 }
 
-.offcanvas-body{
+.offcanvas-body {
     display: flex;
     flex-direction: row;
 }
 
 .horarios {
-    
+
     width: 100%;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    
+
 
 }
 
@@ -729,6 +741,7 @@
     color: #ffffff;
     font-weight: 400;
     text-decoration: none;
+    height: auto;
 }
 
 .footer a {
@@ -818,11 +831,14 @@
     width: 100%;
     height: 100rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    background-image: url(../img/Imagen\ contacto.png);
+    background-image: url(../img/vehiculos\ particulares.jpeg);
     background-attachment: fixed;
     background-position: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    object-position: center center;
 
 }
 
@@ -834,7 +850,9 @@
 
 /* Formulario */
 .formulario {
-    background-color: rgba(100, 148, 237, 0.416);
+    background-color: #032d4283;
+    color: #ffffff;
+    max-width: 60rem;
     border-radius: 1rem;
     margin-bottom: 10rem;
     margin-top: 10rem;
@@ -855,11 +873,11 @@
     align-self: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    border-style:solid;
+    border-style: solid;
 
 }
 
-.dirección{
+.dirección {
     margin-bottom: 3rem;
     display: flex;
 }
@@ -907,23 +925,32 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     width: 100%;
-    height: 60rem;
+    height: 100%;
+    min-height: 45rem;
+    margin-bottom: 3rem;
 }
 
-.imagenvp img{
+.imagenvp img {
     object-fit: contain;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .infovp {
+    margin-top: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 3rem;
 
 }
 
-.infovp button {
+#infovp button {
     width: 15rem;
-    height: 5rem;
+    height: 3rem;
     border-style: none;
     color: #ffffff;
     background-color: red;
@@ -931,11 +958,13 @@
     border-radius: 0.2rem;
 }
 
-.infovp p {
+.parrafo-qs {
     text-align: justify;
+    margin-top: 1rem;
+
 }
 
-.infovp a {
+#infovp a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -945,20 +974,30 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     width: 100%;
-    height: 60rem;
+    height: 100%;
+    
 }
 
 .imagenvt img {
-    object-fit: contain;
-    background-attachment: fixed;
+    object-fit: fill;
     background-position: center center;
     background-size: cover;
     width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    
+
 }
 
-.infovt {
+#infovt {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     margin-left: 1rem;
     margin-right: 1rem;
+    justify-items: center;
+    margin-bottom: 3rem;
+    
 
 }
 
@@ -966,9 +1005,11 @@
     text-align: justify;
 }
 
-.infovt button {
+#infovt button {
+    display: flex;
+    justify-content: center;
     width: 15rem;
-    height: 3rem;
+    height: 2.5rem;
     border-style: none;
     color: #ffffff;
     background-color: red;
@@ -976,7 +1017,7 @@
     border-radius: 0.2rem;
 }
 
-.infovt a {
+#infovt a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -985,19 +1026,19 @@
 .ve {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    align-items: center;
-    align-items: start;
     width: 100%;
-    height: 60rem;
+    justify-items: center;
+    
+
 
 }
 
-.infove {
+#infove {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.infove button {
+#infove button {
     width: 15rem;
     height: 3rem;
     border-style: none;
@@ -1005,14 +1046,19 @@
     background-color: red;
     font-weight: 600;
     border-radius: 0.2rem;
+    align-content: center;
+    margin-bottom: 3rem;
+    margin-left: 8.5rem;
+    
 }
 
-.imagenve img {
-    height: 100%;
-    object-fit: contain;
+.img-ve img {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 2rem;
 }
 
-.infove a {
+#infove a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -1020,7 +1066,7 @@
 
 .tipos-servicio {
     display: grid;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
@@ -1028,7 +1074,7 @@
     background-color: #ffff;
     height: auto;
     align-items: center;
-    height: 116rem;
+    height: 100%;
 }
 
 .tipos-a {
@@ -1067,4 +1113,235 @@
 
 .AvisoPrivacidad p {
     text-align: justify;
+}
+
+#nosotros p{
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+
+    #carouselExampleIndicators img {
+        height: 100%;
+        object-fit:fill;
+        object-position: center center;
+        width: 100%;
+        background-position: center center fixed;
+        background-repeat: no-repeat;
+
+    }
+
+    .carousel-item {
+
+        grid-template-columns: 1fr;
+        height: 18rem;
+        width: 100vw;
+        position: relative;
+    }
+
+    .botones-hero3 {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+        height: 12rem;
+        width: 100%;
+
+    }
+
+    .boton1-hero3 button {
+        width: 15rem;
+        height: 3rem;
+        font-weight: 100;
+        align-self: center;
+    }
+
+    .boton2-hero3 button {
+        width: 15rem;
+        height: 3rem;
+        font-weight: 100;
+        align-self: center;
+
+    }
+
+    .boton3-hero3 button {
+
+        width: 15rem;
+        height: 3rem;
+        font-weight: 100;
+        align-self: center;
+
+    }
+
+    .titulo-hero2 {
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        font-weight: 100;
+     top: 1%;
+     width: 100%;
+     height: 100%
+
+    }
+
+    .titulo-hero2 button {
+
+
+        width: 20rem;
+        height: 2rem;
+        font-weight: 100;
+       
+
+
+    }
+
+    .titulo-hero1 {
+    
+        position: absolute;
+        top: 30rem;
+        color: #ffffff;
+        justify-content: center;
+        width: 100vw;
+        margin-right: 6rem;
+    }
+    
+    
+    /* Agregar icono de telefono */
+    .titulo-hero1 button {
+        margin-top: 5rem;
+        width: 25rem;
+        height: 3rem;
+        border-style: none;
+        color: #ffffff;
+        background-color: red;
+        border-radius: 0.2rem;
+        box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+    
+    }
+
+    .carousel-control-prev {
+        height: 19rem;
+        margin-top: 3.7rem;
+        width: 5% !important;
+    }
+    
+    .carousel-control-next {
+        height: 19rem;
+        margin-top: 3.9rem;
+        width: 5% !important;
+    }
+
+    
+.titulo-hero1 {
+    
+    position: absolute;
+    top: 70%;
+    color: #ffffff;
+    justify-content: center;
+    width: 100vw;
+    margin-right: 6rem;
+}
+
+    .titulo-hero1 button {
+        margin-top: 1rem;
+        width: 16rem;
+        height: 2rem;
+        border-style: none;
+        color: #ffffff;
+        background-color: red;
+        border-radius: 0.2rem;
+        box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+    
+    }
+
+    .servicios-a button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 30rem;
+        height: 6rem;
+        justify-content: space-around;
+        align-items: center;
+        border-style: none;
+        color: #ffffff;
+        background-color: #032D42;
+        font-weight: 600;
+        border-radius: 0.3rem;
+        align-items: center;
+        box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+        transition: ease;
+        transition-duration: 0.5s;
+    }
+    
+    .servicios-a img {
+        width: 4rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    
+    
+    .servicios-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+    
+    .servicios-b button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 30rem;
+        height: 6rem;
+        justify-content: space-around;
+        align-items: center;
+        border-style: none;
+        color: #ffffff;
+        background-color: #032D42;
+        font-weight: 600;
+        border-radius: 0.3rem;
+        align-items: center;
+        box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+    }
+    
+    .servicios-b img {
+        width: 4rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    
+    .servicios-c {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+    
+    .servicios-c button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 30rem;
+        height: 6rem;
+        justify-content: space-around;
+        align-items: center;
+        border-style: none;
+        color: #ffffff;
+        background-color: #032D42;
+        font-weight: 600;
+        border-radius: 0.3rem;
+        align-items: center;
+        box-shadow: inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255, 255, 255, .4);
+    }
+    
+    .servicios-c img {
+        width: 4rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+
 }
